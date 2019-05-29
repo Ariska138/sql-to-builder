@@ -12,7 +12,7 @@ class ExampleTest extends \PHPUnit_Framework_TestCase
             (new BuilderClass('test'))->convert();
             $this->assertFalse();
         } catch (\Exception $e) {
-            $this->assertEquals($e->getMessage(), 'SQL query is not valid');
+             $this->assertEquals($e->getMessage(), 'SQL query is not valid');
         }
     }
 
